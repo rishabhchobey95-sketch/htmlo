@@ -29,6 +29,7 @@ import { EmailDocument } from '../types/editor';
 import { initialEmailDoc } from '../data/defaultTemplate';
 import { premadeEmailTemplates } from '../data/premadeTemplates';
 import { TutorialsSection } from './TutorialsSection';
+import { MainPageVideoShowcase } from './MainPageVideoShowcase';
 
 export interface DashboardTemplate {
   id: string;
@@ -949,6 +950,9 @@ export const Dashboard: React.FC<DashboardProps> = ({
                   </button>
                 </div>
               </div>
+
+              {/* Main Page Motion Video Showcase with Context */}
+              <MainPageVideoShowcase onOpenTutorialsTab={() => setActiveNav('tutorials')} />
 
               {/* Recent Templates Preview */}
               <div>
