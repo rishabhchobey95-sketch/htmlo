@@ -93,7 +93,7 @@ export const initialEmailDoc: EmailDocument = {
                   align: 'center',
                   padding: { top: 0, right: 0, bottom: 14, left: 0 },
                   props: {
-                    content: '<span style="display:inline-block;padding:5px 14px;background-color:#eff6ff;color:#2563eb;font-weight:600;font-size:11px;border-radius:9999px;letter-spacing:0.8px;text-transform:uppercase;">Free HTML Email Editor</span>',
+                    content: '<span style="display:inline-block;padding:5px 14px;background-color:#eff6ff;color:#2563eb;font-weight:600;font-size:11px;border-radius:9999px;letter-spacing:0.8px;text-transform:uppercase;">Made with ❤️ by Rishabh Chobey • Personal Use Only</span>',
                   },
                 },
                 {

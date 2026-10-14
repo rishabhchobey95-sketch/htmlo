@@ -22,10 +22,13 @@ import {
   ShieldCheck,
   CrownSimple,
   SlidersHorizontal,
+  VideoCamera,
+  PlayCircle,
 } from '@phosphor-icons/react';
 import { EmailDocument } from '../types/editor';
 import { initialEmailDoc } from '../data/defaultTemplate';
 import { premadeEmailTemplates } from '../data/premadeTemplates';
+import { TutorialsSection } from './TutorialsSection';
 
 export interface DashboardTemplate {
   id: string;
@@ -710,6 +713,7 @@ export const Dashboard: React.FC<DashboardProps> = ({
             { id: 'dashboard', label: 'Dashboard', icon: <House size={18} /> },
             { id: 'messages', label: 'Email Messages', icon: <EnvelopeSimple size={18} />, count: messages.length },
             { id: 'templates', label: 'Templates', icon: <FolderSimple size={18} />, count: templates.length },
+            { id: 'tutorials', label: 'Video Tutorials', icon: <VideoCamera size={18} />, badge: '4 HD' },
             { id: 'modules', label: 'Modules', icon: <Browsers size={18} />, count: initialModules.length },
             { id: 'ai', label: 'AI Assistant', icon: <Sparkle size={18} />, badge: 'beta' },
             { id: 'brand', label: 'Brand Guidelines', icon: <Palette size={18} /> },
@@ -867,6 +871,26 @@ export const Dashboard: React.FC<DashboardProps> = ({
                   Quick Launch Shortcuts
                 </h3>
                 <div style={{ display: 'flex', gap: '12px', flexWrap: 'wrap' }}>
+                  <button
+                    onClick={() => setActiveNav('tutorials')}
+                    style={{
+                      padding: '10px 18px',
+                      backgroundColor: '#052e16',
+                      color: '#ffffff',
+                      borderRadius: '8px',
+                      fontWeight: 700,
+                      fontSize: '13px',
+                      display: 'flex',
+                      alignItems: 'center',
+                      gap: '8px',
+                      border: '1px solid #16a34a',
+                      cursor: 'pointer',
+                      boxShadow: '0 2px 8px rgba(22, 163, 74, 0.25)',
+                    }}
+                  >
+                    <VideoCamera size={18} color="#86efac" weight="bold" />
+                    <span>Watch Video Tutorials (4 Videos)</span>
+                  </button>
                   <button
                     onClick={onNewTemplate}
                     style={{
@@ -1877,6 +1901,12 @@ export const Dashboard: React.FC<DashboardProps> = ({
                 </div>
               )}
             </div>
+          )}
+
+          
+          {/* TAB 10: VIDEO TUTORIALS */}
+          {activeNav === 'tutorials' && (
+            <TutorialsSection />
           )}
 
           {/* TAB 9: SETTINGS */}
