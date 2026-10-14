@@ -1253,6 +1253,10 @@ export const App: React.FC = () => {
           <span style={{ fontFamily: 'monospace', color: '#94a3b8' }}>
             AST: {document.stripes.length} Stripes // Width: {document.settings.contentWidth}px
           </span>
+          <span style={{ color: '#475569' }}>|</span>
+          <span style={{ color: '#cbd5e1', fontWeight: 600, fontSize: '11px' }}>
+            Made with <span style={{ color: '#ef4444' }}>❤️</span> by <strong>Rishabh Chobey</strong> (Personal Use Only)
+          </span>
         </div>
 
         <div style={{ display: 'flex', alignItems: 'center', gap: '12px' }}>

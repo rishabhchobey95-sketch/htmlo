@@ -2,7 +2,8 @@
 
 <div align="center">
 
-![License](https://img.shields.io/badge/License-MIT-blue.svg?style=for-the-badge)
+![License](https://img.shields.io/badge/License-Personal%20Use%20Only-crimson.svg?style=for-the-badge)
+![Author](https://img.shields.io/badge/Made%20with%20%E2%9D%A4%EF%B8%8F%20by-Rishabh%20Chobey-blue?style=for-the-badge)
 ![React](https://img.shields.io/badge/React-19-61DAFB?style=for-the-badge&logo=react&logoColor=black)
 ![TypeScript](https://img.shields.io/badge/TypeScript-6.0-3178C6?style=for-the-badge&logo=typescript&logoColor=white)
 ![Vite](https://img.shields.io/badge/Vite-8.3-646CFF?style=for-the-badge&logo=vite&logoColor=white)
@@ -11,6 +12,7 @@
 
 <p align="center">
   <b>Enterprise-grade, desktop-class visual email studio and mathematical XHTML/MSO compiler.</b><br/>
+  <i>Made with ❤️ by <b>Rishabh Chobey</b> • Personal Use Only (All Rights Reserved).</i><br/>
   Featuring autonomous collaborative <b>AI Swarm Cursors</b>, 102 KB Gmail clipping meter, VML roundrect buttons, and dynamic floating dock window physics.
 </p>
 
@@ -232,12 +234,16 @@ htmlo/
 
 ---
 
-## 📄 License
+## 📄 License & Intellectual Property
 
-Distributed under the **MIT License**. See `LICENSE` for more information.
+**Only for personal use. Not for commercial use. All rights reserved to Rishabh Chobey.**
+
+This software is strictly licensed for individual, personal, and educational purposes only. Commercial utilization, monetization, distribution, or integration into enterprise platforms is strictly prohibited without explicit written permission from **Rishabh Chobey**.
+
+See [`LICENSE`](./LICENSE) for full legal terms and conditions.
 
 ---
 
 <div align="center">
-  <sub>Crafted with passion for bulletproof email engineering.</sub>
+  <sub>Made with ❤️ by <b>Rishabh Chobey</b> &bull; Only for personal use &bull; All Rights Reserved</sub>
 </div>

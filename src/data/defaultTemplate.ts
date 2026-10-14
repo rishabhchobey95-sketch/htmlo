@@ -250,7 +250,7 @@ export const initialEmailDoc: EmailDocument = {
                   align: 'center',
                   padding: { top: 0, right: 0, bottom: 6, left: 0 },
                   props: {
-                    content: '<p style="margin:0;font-size:12px;color:#64748b;">© 2026 htmlo Email Studio. Created with love for writers & developers.</p>',
+                    content: '<p style="margin:0;font-size:12px;color:#64748b;">© 2026 htmlo. Made with ❤️ by Rishabh Chobey • Personal Use Only (All Rights Reserved).</p>',
                   },
                 },
                 {

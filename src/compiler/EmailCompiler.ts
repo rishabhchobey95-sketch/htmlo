@@ -16,6 +16,9 @@ export class EmailCompiler {
 <head>
   <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="generator" content="htmlo Email Studio - Made with love by Rishabh Chobey" />
+  <meta name="author" content="Rishabh Chobey" />
+  <!-- Made with love by Rishabh Chobey. Only for personal use, not for commercial use. All rights reserved to Rishabh Chobey. -->
   <meta name="color-scheme" content="light dark" />
   <meta name="supported-color-schemes" content="light dark" />
   <meta name="x-apple-disable-message-reformatting" />

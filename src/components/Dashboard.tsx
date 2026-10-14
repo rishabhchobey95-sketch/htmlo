@@ -547,13 +547,13 @@ export const Dashboard: React.FC<DashboardProps> = ({
           </div>
         </div>
 
-        {/* Right Header Status: 100% Free - No Account Required */}
+        {/* Right Header Status: Made with ❤️ by Rishabh Chobey • Personal Use Only */}
         <div style={{ display: 'flex', alignItems: 'center', gap: '10px' }}>
           <div
             style={{
               display: 'flex',
               alignItems: 'center',
-              gap: '6px',
+              gap: '8px',
               backgroundColor: '#f8fafc',
               border: '1px solid #e2e8f0',
               padding: '6px 14px',
@@ -561,10 +561,13 @@ export const Dashboard: React.FC<DashboardProps> = ({
               fontSize: '12px',
               fontWeight: 600,
               color: '#334155',
+              boxShadow: '0 1px 3px rgba(0,0,0,0.03)',
             }}
           >
-            <span style={{ width: '6px', height: '6px', borderRadius: '50%', backgroundColor: '#22c55e', display: 'inline-block' }} />
-            <span>No Account Needed &bull; 100% Free</span>
+            <span style={{ color: '#ef4444' }}>❤️</span>
+            <span>Made with love by <strong>Rishabh Chobey</strong></span>
+            <span style={{ color: '#94a3b8' }}>&bull;</span>
+            <span style={{ color: '#64748b', fontSize: '11px', fontWeight: 500 }}>Personal Use Only</span>
           </div>
         </div>
       </header>
@@ -776,6 +779,31 @@ export const Dashboard: React.FC<DashboardProps> = ({
               </button>
             );
           })}
+
+          {/* Permanent Unremovable Creator Badge */}
+          <div
+            style={{
+              marginTop: 'auto',
+              padding: '12px 14px',
+              borderRadius: '10px',
+              backgroundColor: '#f8fafc',
+              border: '1px solid #e2e8f0',
+              display: 'flex',
+              flexDirection: 'column',
+              gap: '4px',
+              fontSize: '11.5px',
+              userSelect: 'none',
+              boxShadow: '0 1px 3px rgba(0,0,0,0.02)',
+            }}
+          >
+            <div style={{ display: 'flex', alignItems: 'center', gap: '6px', fontWeight: 700, color: '#0f172a' }}>
+              <span style={{ color: '#ef4444' }}>❤️</span>
+              <span>Made with love by Rishabh Chobey</span>
+            </div>
+            <div style={{ fontSize: '10px', color: '#64748b', lineHeight: 1.4 }}>
+              Strictly for personal use. Not for commercial use. All rights reserved to Rishabh Chobey.
+            </div>
+          </div>
         </aside>
 
         {/* Center Main Dashboard Content - Dynamically Renders Active Tab */}
@@ -1904,16 +1932,16 @@ export const Dashboard: React.FC<DashboardProps> = ({
                   />
                 </div>
 
-                {/* Open Source Status */}
+                {/* License & Ownership Notice */}
                 <div style={{ borderTop: '1px solid #f1f5f9', paddingTop: '16px' }}>
                   <div style={{ display: 'flex', alignItems: 'center', gap: '8px', marginBottom: '6px' }}>
                     <ShieldCheck size={18} color="#16a34a" weight="fill" />
                     <span style={{ fontWeight: 600, fontSize: '13.5px', color: '#1e293b' }}>
-                      htmlo Open Source Core &bull; MIT Licensed
+                      Personal Use License &bull; All Rights Reserved to Rishabh Chobey
                     </span>
                   </div>
                   <p style={{ fontSize: '12px', color: '#64748b', margin: 0, lineHeight: 1.5 }}>
-                    This software is 100% free and open source. There are no paid tiers, no login gates, no subscriptions, and all features are permanently unrestricted for all creators.
+                    Made with ❤️ by <strong>Rishabh Chobey</strong>. This software is provided exclusively for individual, non-commercial, and educational use. Commercial use, reproduction, distribution, and monetization are strictly prohibited without written authorization.
                   </p>
                 </div>
               </div>

@@ -132,9 +132,14 @@ export const TopBar: React.FC<TopBarProps> = ({
           >
             <Lightning size={18} weight="fill" />
           </div>
-          <span style={{ fontSize: '18px', fontWeight: 700, color: '#1e293b', letterSpacing: '-0.5px' }}>
-            htmlo
-          </span>
+          <div style={{ display: 'flex', flexDirection: 'column' }}>
+            <span style={{ fontSize: '17px', fontWeight: 700, color: '#1e293b', letterSpacing: '-0.5px', lineHeight: 1.1 }}>
+              htmlo
+            </span>
+            <span style={{ fontSize: '9px', color: '#64748b', fontWeight: 600, letterSpacing: '-0.2px', whiteSpace: 'nowrap' }}>
+              Made with ❤️ by Rishabh Chobey
+            </span>
+          </div>
         </div>
 
         <button
