@@ -1,0 +1,248 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap');
+
+:root {
+  /* Stripo Pure Light & Slate Palette */
+  --stripo-bg-canvas: #f0f3f6;
+  --stripo-topbar-bg: #ffffff;
+  --stripo-panel-bg: #ffffff;
+  --stripo-card-bg: #f8fafc;
+  --stripo-border: #e2e8f0;
+  --stripo-border-light: #edf2f7;
+  
+  --stripo-text-primary: #1e293b;
+  --stripo-text-secondary: #64748b;
+  --stripo-text-muted: #94a3b8;
+  
+  --stripo-green: #22c55e;
+  --stripo-green-hover: #16a34a;
+  --stripo-blue: #3b82f6;
+  --stripo-blue-hover: #2563eb;
+  
+  --stripo-stripe-pill: #475569;
+  --stripo-struct-pill: #b91c1c;
+  --stripo-col-pill: #0284c7;
+
+  --font-family: -apple-system, BlinkMacSystemFont, 'Inter', 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+  --font-mono: 'JetBrains Mono', monospace;
+
+  --sidebar-rail-width: 58px;
+  --sidebar-drawer-width: 260px;
+  --inspector-width: 330px;
+  --topbar-height: 52px;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: var(--font-family);
+  background-color: var(--stripo-bg-canvas);
+  color: var(--stripo-text-primary);
+  overflow: hidden;
+  height: 100vh;
+  width: 100vw;
+  -webkit-font-smoothing: antialiased;
+}
+
+button {
+  font-family: inherit;
+  cursor: pointer;
+  border: none;
+  background: none;
+}
+
+input, select, textarea {
+  font-family: inherit;
+}
+
+/* Subtle dot-grid canvas background like Stripo */
+.stripo-canvas-bg {
+  background-color: #f1f5f9;
+  background-image: radial-gradient(#cbd5e1 1.2px, transparent 1.2px);
+  background-size: 20px 20px;
+}
+
+/* Clean Custom Scrollbars */
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+
+::-webkit-scrollbar-track {
+  background: #f1f5f9;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #cbd5e1;
+  border-radius: 9999px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #94a3b8;
+}
+
+/* Stripo pill button utility */
+.stripo-pill-btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 6px;
+  padding: 6px 14px;
+  border-radius: 9999px;
+  font-size: 13px;
+  font-weight: 500;
+  border: 1px solid var(--stripo-border);
+  background-color: #ffffff;
+  color: var(--stripo-text-primary);
+  transition: all 0.15s ease;
+}
+
+.stripo-pill-btn:hover {
+  background-color: #f8fafc;
+  border-color: #cbd5e1;
+}
+
+/* Stripo accordion card */
+.stripo-accordion {
+  background: #ffffff;
+  border: 1px solid var(--stripo-border);
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 1px 3px rgba(0,0,0,0.03);
+}
+
+/* Deep Obsidian & ReactBits Architecture Tokens */
+:root {
+  --bg-app: #09090b;
+  --bg-panel: #111114;
+  --bg-elevated: #18181c;
+  --bg-glass: rgba(18, 18, 22, 0.78);
+  --border-subtle: rgba(255, 255, 255, 0.07);
+  --border-highlight: rgba(255, 255, 255, 0.14);
+}
+
+@keyframes shinyTextSweep {
+  0% {
+    background-position: 100% 0;
+  }
+  100% {
+    background-position: -100% 0;
+  }
+}
+
+@keyframes spinSlow {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+.animate-spin-slow {
+  animation: spinSlow 6s linear infinite;
+}
+
+@keyframes sparkRay {
+  0% {
+    opacity: 1;
+    transform: scale(0);
+  }
+  50% {
+    opacity: 1;
+    transform: scale(1);
+  }
+  100% {
+    opacity: 0;
+    transform: scale(1.4);
+  }
+}
+
+.animate-spark-ray {
+  animation: sparkRay 0.5s ease-out forwards;
+}
+
+/* Modal & Dialog Overlay Primitives */
+.htmlo-modal-overlay {
+  position: fixed;
+  inset: 0;
+  z-index: 1000;
+  background-color: rgba(0, 0, 0, 0.65);
+  backdrop-filter: blur(8px);
+  -webkit-backdrop-filter: blur(8px);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+}
+
+.htmlo-dialog-card {
+  width: 100%;
+  max-width: 680px;
+  background-color: #111115;
+  border: 1px solid rgba(255, 255, 255, 0.12);
+  border-radius: 16px;
+  box-shadow: 0 24px 60px rgba(0, 0, 0, 0.55), 0 0 0 1px rgba(255, 255, 255, 0.06);
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  max-height: 85vh;
+  color: #ffffff;
+  animation: modalFadeIn 0.22s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.htmlo-command-dialog {
+  width: 100%;
+  max-width: 580px;
+  background-color: #121217;
+  border: 1px solid rgba(255, 255, 255, 0.14);
+  border-radius: 14px;
+  box-shadow: 0 28px 70px rgba(0, 0, 0, 0.6), 0 0 0 1px rgba(255, 255, 255, 0.08);
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  color: #ffffff;
+  animation: modalFadeIn 0.18s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+@keyframes modalFadeIn {
+  from {
+    opacity: 0;
+    transform: scale(0.97) translateY(6px);
+  }
+  to {
+    opacity: 1;
+    transform: scale(1) translateY(0);
+  }
+}
+
+/* Bottom Telemetry Status Bar */
+.htmlo-bottom-bar {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 28px;
+  background-color: #0c0c0e;
+  border-top: 1px solid rgba(255, 255, 255, 0.08);
+  padding: 0 16px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  font-size: 11px;
+  user-select: none;
+  z-index: 40;
+  color: #94a3b8;
+}
+
+@keyframes ping {
+  75%, 100% {
+    transform: scale(2);
+    opacity: 0;
+  }
+}
+
+
